@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar javascript</title>
+</head>
+
+<body>
+    <script>
+        // Nilai Sama Dengan(==) //kedua nilainya harus sama kalau tidak sama maka akan false
+        // var a = true;
+        // var benar = true;
+        // document.write(a == benar); // true
+
+        // var a = 12;
+        // var b = 4;
+        // document.write(a == b); // false
+
+        // var a = "7";
+        // var b = "7";
+        // document.write(a == b); // true !
+
+        // Nilai dan Tipe Data Sama Dengan(===)
+        // Sama seperti operator sebelumnya, tapi operator kesetaraan ketat(===) tidak hanya membandingkan nilai, namun juga tipe datanya.
+        // Khusus untuk tipe data non - primitif seperti array dan objek, hanya menghasilkan nilai true jika merujuk ke objek atau array yang sama.
+        // var a = "5";
+        // var benar = "5";
+        // document.write(a === benar); // true /lebih ketat perbandingannya harus sama ke dua tipe datanya
+
+        // var a = 12;
+        // var b = 4;
+        // console.log(a === b); // false
+
+        // var a = 7;
+        // var b = "7";
+        // console.log(a === b); // true !
+
+        // Tidak Sama Dengan(!=)
+        // Operator tidak sama dengan(!=) membandingkan apakah suatu nilai tidak sama dengan nilai lain, tidak peduli dengan tipe datanya.
+        // var a = true;
+        // var benar = true;
+        // document.write(a != benar); // false
+
+        // var a = 12;
+        // var b = 4;
+        // console.log(a != b); // true
+
+        // var a = 7;
+        // var b = "7";
+        // console.log(a != b); // false !
+
+        // Nilai dan Tipe Data Tidak Sama Dengan(!==)
+        // Sama seperti operator sebelumnya, tapi operator !== membandingkan tipe datanya, tidak hanya nilai.
+        // Selain itu, khusus untuk tipe data non - primitif seperti array -> data = ['data1', 'data2'] dan objek -> data = {'data1','data2'}, hanya menghasilkan nilai false jika merujuk ke objek atau array yang sama.
+        // var a = true;
+        // var benar = true;
+        // console.log(a !== benar); // false
+
+        // var a = 12;
+        // var b = 4;
+        // console.log(a !== b); // true
+
+        // var a = 7;
+        // var b = "7";
+        // console.log(a !== b); // true !
+
+        // var a = "7";
+        // var b = "7";
+        // console.log(a !== b); // false
+
+        // Lebih Kecil Dari(<)
+        // Sama seperti operator sebelumnya, tapi operator < membandingkan apakah nilai operan di sebelah kiri lebih kecil dari nilai operan di sebelah kanan.
+        // Lebih Kecil Dari atau Sama Dengan(<=)
+        // Sama seperti operator sebelumnya, operator ini(<=) membandingkan apakah nilai operan di sebelah kiri lebih kecil atau sama dengan nilai operan di sebelah kanan.
+        // var a = 3;
+        // var b = 4;
+        // console.log(a < b); // true
+        // if (a < b) {
+        //     document.write('benar');
+        // } else {
+        //     document.write('salah');
+        // }
+        // console.log(a <= b); // true
+
+        // var a = 5;
+        // var b = 5;
+        // console.log(a < b); // false
+        // console.log(a <= b); // true 
+
+        // Lebih Besar Dari(>)
+        // Operator lebih besar dari(>) membandingkan apak nilai operan di sebelah kiri lebih besar dari operan di sebelah kanan.
+        // Lebih Besar Dari atau Sama Dengan(>=)
+        // Operator ini(>=) membandingkan apakah nilai operan di sebelah kiri lebih besar atau sama dengan nilai operan di sebelah kanan.
+        var a = 4;
+        var b = 2;
+        console.log(a > b); // false harus lebih besar
+        console.log(a >= b); // false boleh sama boleh lebih besar
+
+        // var a = 5;
+        // var b = 5;
+        // console.log(a > b); // false
+        // console.log(a >= b);
+
+        const d = false;
+        const dd = (d) ? "benar" : "salah";
+        console.log(dd);
+
+        const i = "b";
+        // dua kondisi
+        if (i === "a") {
+            document.write((i) ? "benar" : "salah");
+        } else if (i === 2) {
+            document.write((i) ? i : "bener"); //kondisi yg pertama untuk true, kondisi ke dua untuk false
+        } else {
+            document.write('salah');
+        }
+
+    </script>
+
+</body>
+
+</html>
